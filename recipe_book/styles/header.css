@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-bg-color: #ecca9c;
+  --secondary-bg-color: #dba979;
+  --main-heading-color: #0e6008;
+  --main-text-color: #c45508;
+  --second-main-text-color: #954004;
+  --secondary-text-color: #afd198;
+  --main-card-color: #1e3458;
+  --secondary-card-color: #e8efcf;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+  padding: 0 1.3rem;
+  border-bottom: 4px solid var(--main-text-color);
+}
+
+header .header-logo {
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .header-title {
+  color: var(--main-heading-color);
+}
+
+header .header-title span {
+  font-weight: 500;
+  color: var(--main-text-color);
+  font-style: italic;
+}
+
+header .header-nav {
+  display: flex;
+  justify-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-right: 1rem;
+}
+
+header .header-nav li a {
+  color: var(--main-heading-color);
+}
+
+header .header-nav li i {
+  color: var(--main-text-color);
+}
+
+header .header-nav li {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+header .header-nav li:hover {
+  scale: 1.1;
+  color: var(--main-text-color);
+  text-decoration: underline;
+}

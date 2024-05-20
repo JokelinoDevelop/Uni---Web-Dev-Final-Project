@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-bg-color: #ecca9c;
+  --secondary-bg-color: #dba979;
+  --main-heading-color: #0e6008;
+  --main-text-color: #c45508;
+  --second-main-text-color: #954004;
+  --secondary-text-color: #afd198;
+  --main-card-color: #1e3458;
+  --secondary-card-color: #e8efcf;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  background-color: var(--secondary-card-color);
+}
+
+main section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+main section .main-img {
+  max-width: 35rem;
+  flex: 0.5;
+}
+
+main section .main-img img {
+  border-radius: 20px;
+  width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
+}
+
+main section .main-content {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main section .main-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+main section .main-content p {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
